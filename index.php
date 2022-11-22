@@ -16,7 +16,8 @@
         $password = $_POST['pass'];
         $encrypted_password = password_hash($password, PASSWORD_DEFAULT);
     }
-
+    $password = '';
+    $encrypted_password = '';
 ?>
 
 <body>
