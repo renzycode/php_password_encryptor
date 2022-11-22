@@ -15,9 +15,11 @@
     if(isset($_POST['pass'])){
         $password = $_POST['pass'];
         $encrypted_password = password_hash($password, PASSWORD_DEFAULT);
+    }else{
+        $password = '';
+        $encrypted_password = '';
     }
-    $password = '';
-    $encrypted_password = '';
+    
 ?>
 
 <body>
